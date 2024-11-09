@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  box-sizing: border-box; /* 包括内边距在内的宽度计算 */
 }
 
 a,
@@ -24,12 +25,12 @@ a,
 @media (min-width: 1024px) {
   body {
     display: flex;
-    place-items: center;
+    /* place-items: center; */
   }
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     padding: 0 2rem;
   }
 }
