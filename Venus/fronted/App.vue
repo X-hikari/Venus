@@ -11,8 +11,8 @@
     <nav class="navbar">
       <ul>
         <li><router-link to="/home">首页</router-link></li>
-        <li><a href="#news">最新动态</a></li>
-        <li><a href="#about">关于我们</a></li>
+        <li><router-link to="/news">最新动态</router-link></li>
+        <li><router-link to="/about">关于我们</router-link></li>
       </ul>
     </nav>
 
@@ -27,7 +27,7 @@
         <div class="social-links">
           <a href="https://github.com/xxywindy/Venus" target="_blank">GitHub</a> | 
           <a href="https://example.com" target="_blank">LinkedIn</a> | 
-          <a href="mailto:youremail@example.com">Email</a>
+          <a href="mailto:3220100037@zju.edu.cn">Email</a>
         </div>
       </div>
     </footer>

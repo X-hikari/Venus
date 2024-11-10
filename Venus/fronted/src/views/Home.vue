@@ -60,34 +60,34 @@
         <div class="result-item">
           <router-link to="/result1">
             <img src="../assets/result1.jpg" alt="成果图1" />
-            <div class="overlay">
-              <div class="overlay-text">成果 1</div>
+            <div class="home_overlay">
+              <div class="home_overlay-text">成果 1</div>
             </div>
           </router-link>
         </div>
         <div class="result-item">
-          <a href="#result2">
+          <router-link to="/result2">
             <img src="../assets/result2.jpg" alt="成果图2" />
-            <div class="overlay">
-              <div class="overlay-text">成果 2</div>
+            <div class="home_overlay">
+              <div class="home_overlay-text">成果 2</div>
             </div>
-          </a>
+          </router-link>
         </div>
         <div class="result-item">
-          <a href="#result3">
+          <router-link to="/result3">
             <img src="../assets/result3.jpg" alt="成果图3" />
-            <div class="overlay">
-              <div class="overlay-text">成果 3</div>
+            <div class="home_overlay">
+              <div class="home_overlay-text">成果 3</div>
             </div>
-          </a>
+          </router-link>
         </div>
         <div class="result-item">
-          <a href="#result4">
+          <router-link to="/result4">
             <img src="../assets/result4.jpg" alt="成果图4" />
-            <div class="overlay">
-              <div class="overlay-text">成果 4</div>
+            <div class="home_overlay">
+              <div class="home_overlay-text">成果 4</div>
             </div>
-          </a>
+          </router-link>
         </div>
       </div>
     </div>
@@ -349,7 +349,7 @@ const name = 'Home'
 }
 
 /* 遮罩层样式 */
-.overlay {
+.home_overlay {
   position: absolute;
   bottom: -100%; /* 初始状态：隐藏在图片底部 */
   left: 0;
@@ -363,12 +363,12 @@ const name = 'Home'
 }
 
 /* 鼠标悬停时遮罩层从下方滑出 */
-.result-item:hover .overlay {
+.result-item:hover .home_overlay {
   bottom: 0; /* 鼠标移上去时，遮罩层滑上来 */
 }
 
 /* 遮罩层中的文字样式 */
-.overlay-text {
+.home_overlay-text {
   color: white;
   font-size: 20px;
   font-weight: bold;
