@@ -1,20 +1,5 @@
 <template>
-  <div class="app">
-
-    <!-- 顶部图片区域 -->
-    <div class="top-banner">
-      <img src="./assets/header.jpg" alt="Banner" class="banner-image" />
-      <div class="banner-text">这里是顶部文字，可以显示标题或描述</div>
-    </div>
-
-    <!-- 导航栏 -->
-    <nav class="navbar">
-      <ul>
-        <li><a href="#home">首页</a></li>
-        <li><a href="#news">最新动态</a></li>
-        <li><a href="#about">关于我们</a></li>
-      </ul>
-    </nav>
+  <div>
 
     <!-- 主体内容，左右分栏 -->
     <div class="main-content">
@@ -55,6 +40,10 @@
           <li><a href="#item4">这是第四项链接</a></li>
           <li><a href="#item5">这是第五项链接</a></li>
           <li><a href="#item6">这是第六项链接</a></li>
+          <li><a href="#item7">这是第七项链接</a></li>
+          <li><a href="#item8">这是第八项链接</a></li>
+          <li><a href="#item9">这是第九项链接</a></li>
+          <li><a href="#item10">这是第十项链接</a></li>
         </ul>
       </div>
     </div>
@@ -69,16 +58,16 @@
       <!-- 下部分：均分成四个部分，每个部分放一张图片 -->
       <div class="results-gallery">
         <div class="result-item">
-          <a href="#result1">
-            <img src="./assets/result1.jpg" alt="成果图1" />
+          <router-link to="/result1">
+            <img src="../assets/result1.jpg" alt="成果图1" />
             <div class="overlay">
               <div class="overlay-text">成果 1</div>
             </div>
-          </a>
+          </router-link>
         </div>
         <div class="result-item">
           <a href="#result2">
-            <img src="./assets/result2.jpg" alt="成果图2" />
+            <img src="../assets/result2.jpg" alt="成果图2" />
             <div class="overlay">
               <div class="overlay-text">成果 2</div>
             </div>
@@ -86,7 +75,7 @@
         </div>
         <div class="result-item">
           <a href="#result3">
-            <img src="./assets/result3.jpg" alt="成果图3" />
+            <img src="../assets/result3.jpg" alt="成果图3" />
             <div class="overlay">
               <div class="overlay-text">成果 3</div>
             </div>
@@ -94,7 +83,7 @@
         </div>
         <div class="result-item">
           <a href="#result4">
-            <img src="./assets/result4.jpg" alt="成果图4" />
+            <img src="../assets/result4.jpg" alt="成果图4" />
             <div class="overlay">
               <div class="overlay-text">成果 4</div>
             </div>
@@ -103,17 +92,6 @@
       </div>
     </div>
 
-    <!-- 页脚部分 -->
-    <footer class="footer">
-      <div class="footer-content">
-        <p>&copy; 2024 Venus. 版权所有.</p>
-        <div class="social-links">
-          <a href="https://example.com" target="_blank">GitHub</a> | 
-          <a href="https://example.com" target="_blank">LinkedIn</a> | 
-          <a href="mailto:youremail@example.com">Email</a>
-        </div>
-      </div>
-    </footer>
   </div>
   
 </template>
@@ -159,83 +137,15 @@ onBeforeUnmount(() => {
   }
 })
 
+const name = 'Home'
+
 </script>
 
 <style scoped>
-/* 设置页面整体布局 */
-.app {
-  margin: 0;
-  padding: 0;
-  align-items: flex-start; /* 确保内容从顶部开始 */
-}
-
-/* 顶部图片区域样式 */
-.top-banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  z-index: 1000; /* 确保顶层显示 */
-}
-
-.banner-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 保持图片宽高比，填充整个区域 */
-}
-
-/* 文字叠加样式 */
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 26px;
-  font-weight: bold;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); /* 添加阴影提升文字可读性 */
-}
-
-/* 导航栏样式 */
-.navbar {
-  position: fixed;
-  top: 100px; /* 紧贴在图片下方 */
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  z-index: 999;
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar li {
-  margin: 0 15px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
 /* 主体内容区域样式 */
 .main-content {
   display: flex;
   justify-content: space-between;
-  padding-top: 130px;  /* 导航栏和顶部图片的高度 */
   height: 430px;
 }
 
@@ -444,12 +354,12 @@ onBeforeUnmount(() => {
   bottom: -100%; /* 初始状态：隐藏在图片底部 */
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background-color: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: bottom 0.3s ease; /* 平滑的过渡效果 */
+  transition: bottom 0.5s ease; /* 平滑的过渡效果 */
 }
 
 /* 鼠标悬停时遮罩层从下方滑出 */
@@ -464,43 +374,6 @@ onBeforeUnmount(() => {
   font-weight: bold;
   text-align: center;
   padding: 10px;
-}
-
-/* 页脚部分样式 */
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.social-links a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
-}
-
-/* 确保页面内容不被顶部固定的图片遮挡 */
-body {
-  padding-top: 0; /* 留出顶部空间 */
-  margin: 0;
 }
 
 </style>
