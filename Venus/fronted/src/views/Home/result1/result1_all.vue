@@ -2,16 +2,18 @@
   <!-- 容器 -->
   <div class="image-container">
     <ul>
-      <!-- 动态生成8个li -->
-      <li v-for="(image, index) in images" :key="index" class="image-item">
-        <div class="image-wrap">
-          <img :src="image.src" alt="Image" class="image"/>
+      <!-- 动态生成8个li，使用router-link包裹每个li -->
+      <router-link v-for="(image, index) in images" :key="index" :to="image.link" class="image-item">
+        <li>
+          <div class="image-wrap">
+            <img :src="image.src" alt="Image" class="image"/>
             <div class="result1_overlay">
               <div class="title">{{ image.title }}</div>
               <div class="text">{{ image.text }}</div>
             </div>
-        </div>
-      </li>
+          </div>
+        </li>
+      </router-link>
     </ul>
   </div>
 </template>
@@ -21,14 +23,14 @@
   const name = 'result1_all'
 
   const images = [
-  { src: 'https://via.placeholder.com/1000x200', title: 'title1', text: 'Image 1' },
-  { src: 'https://via.placeholder.com/1000x200', title: 'title2', text: 'Image 2' },
-  { src: 'https://via.placeholder.com/1000x200', title: 'title3', text: 'Image 3' },
-  { src: 'https://via.placeholder.com/1000x200', title: 'title4', text: 'Image 4' },
-  { src: 'https://via.placeholder.com/1000x200', title: 'title5', text: 'Image 5' },
-  { src: 'https://via.placeholder.com/1000x200', title: 'title6', text: 'Image 6' },
-  { src: 'https://via.placeholder.com/1000x200', title: 'title7', text: 'Image 7' },
-  { src: 'https://via.placeholder.com/1000x200', title: 'title8', text: 'Image 8' },
+  { src: 'https://via.placeholder.com/1000x200', title: 'title1', text: 'Image 1', link: '/article/1' },
+  { src: 'https://via.placeholder.com/1000x200', title: 'title2', text: 'Image 2', link: '/article/2' },
+  { src: 'https://via.placeholder.com/1000x200', title: 'title3', text: 'Image 3', link: '/article/3' },
+  { src: 'https://via.placeholder.com/1000x200', title: 'title4', text: 'Image 4', link: '/article/4' },
+  { src: 'https://via.placeholder.com/1000x200', title: 'title5', text: 'Image 5', link: '/article/5' },
+  { src: 'https://via.placeholder.com/1000x200', title: 'title6', text: 'Image 6', link: '/article/6' },
+  { src: 'https://via.placeholder.com/1000x200', title: 'title7', text: 'Image 7', link: '/article/7' },
+  { src: 'https://via.placeholder.com/1000x200', title: 'title8', text: 'Image 8', link: '/article/8' },
 ]
 
 </script>

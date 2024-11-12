@@ -25,7 +25,7 @@
       <div class="right-content  boxed-item">
         <!-- 标题和更多链接 -->
         <div class="header-section">
-          <h2>索引标题</h2>
+          <h2>工具导航</h2>
           <a href="#more" class="more-link">更多</a>
         </div>
 
@@ -101,8 +101,8 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 // 轮播图图片列表
 const images = [
-  './footer.jpg',
-  './header.jpg',
+  './image1.png',
+  './image2.png',
   './logo.png',
 ]
 

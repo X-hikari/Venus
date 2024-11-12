@@ -4,7 +4,7 @@
     <!-- 顶部图片区域 -->
     <div class="top-banner">
       <img src="./src/assets/header.jpg" alt="Banner" class="banner-image" />
-      <div class="banner-text">这里是顶部文字，可以显示标题或描述</div>
+      <div class="banner-text">童心启航，法制相随——普法网</div>
     </div>
 
     <!-- 导航栏 -->

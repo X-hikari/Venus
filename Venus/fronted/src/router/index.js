@@ -9,6 +9,7 @@ import about from '../views/about.vue';
 import result1_all from '../views/Home/result1/result1_all.vue';
 import explain from '../views/Home/result1/result1_explain.vue';
 import activity from '../views/Home/result1/result1_activity.vue';
+import ArticlePage from '../views/Home/result1/ArticlePage.vue';
 
 const routes = [
   { path: '/', redirect: '/home' }, // 自动重定向到 /home
@@ -23,6 +24,7 @@ const routes = [
       { path: 'all', name: 'result1_all', component: result1_all }, // 子路由定义为相对路径
       { path: 'explain', name: 'explain', component: explain }, 
       { path: 'activity', name: 'activity', component: activity }, 
+      { path: '/article/:id', name: 'article', component: ArticlePage}
     ],
   },
   
