@@ -34,16 +34,16 @@
 
         <!-- 链接列表 -->
         <ul class="link-list">
-          <li><a href="#item1">这是第一项链接</a></li>
-          <li><a href="#item2">这是第二项链接</a></li>
-          <li><a href="#item3">这是第三项链接</a></li>
-          <li><a href="#item4">这是第四项链接</a></li>
-          <li><a href="#item5">这是第五项链接</a></li>
-          <li><a href="#item6">这是第六项链接</a></li>
-          <li><a href="#item7">这是第七项链接</a></li>
-          <li><a href="#item8">这是第八项链接</a></li>
-          <li><a href="#item9">这是第九项链接</a></li>
-          <li><a href="#item10">这是第十项链接</a></li>
+          <li><a href="https://qspfw.moe.gov.cn/index.html" target="_blank">教育部全国青少年普法网</a></li>
+          <li><a href="http://www.qmpfw.cn/" target="_blank">全民普法网</a></li>
+          <li><a href="http://www.12348.gov.cn/" target="_blank">中国法律服务网</a></li>
+          <li><a href="https://www.zglx.org.cn/" target="_blank">中国聋人协会网</a></li>
+          <li><a href="http://www.cndcm.cn/" target="_blank">中聋网</a></li>
+          <li><a href="http://bbs.cndeaf.com/" target="_blank">听障论坛</a></li>
+          <li><a href="https://www.zgmx.org.cn/" target="_blank">中国盲人协会网</a></li>
+          <li><a href="https://www.viyf.org/" target="_blank">VIYF</a></li>
+          <li><a href="http://www.cdlvi.cn/" target="_blank">中国盲人数字图书馆</a></li>
+          <li><a href="http://www.braille.org.cn/" target="_blank">中国盲文数字平台</a></li>
         </ul>
       </div>
     </div>
@@ -61,7 +61,7 @@
           <router-link to="/result1">
             <img src="../assets/result1.jpg" alt="成果图1" />
             <div class="home_overlay">
-              <div class="home_overlay-text">成果 1</div>
+              <div class="home_overlay-text">图文展示</div>
             </div>
           </router-link>
         </div>
@@ -101,9 +101,9 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 // 轮播图图片列表
 const images = [
-  './image1.png',
-  './image2.png',
-  './logo.png',
+  './bannar/image1.jpg',
+  './bannar/image2.jpg',
+  './bannar/image3.jpg',
 ]
 
 const currentImage = ref(0)

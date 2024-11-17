@@ -23,10 +23,10 @@
   const name = 'result1_all'
 
   const images = [
-  { src: 'https://via.placeholder.com/1000x200', title: 'title1', text: 'Image 1', link: '/article/1' },
-  { src: 'https://via.placeholder.com/1000x200', title: 'title2', text: 'Image 2', link: '/article/2' },
-  { src: 'https://via.placeholder.com/1000x200', title: 'title3', text: 'Image 3', link: '/article/3' },
-  { src: 'https://via.placeholder.com/1000x200', title: 'title4', text: 'Image 4', link: '/article/4' },
+  { src: '/result1/images/article1.png', title: '小知识——中国法律的起源', text: '中国法律源远流长，起初以部落刑法为基础，经历夏、商、周、秦等朝代发展，最终形成完整法律体系', link: '/article/1' },
+  { src: '/result1/images/article2.png', title: '小知识——如何获得法律援助', text: '法律援助为经济困难人士提供免费法律服务，保障其合法权益，申请时需提供相关材料，可拨打12348或查询法律服务网获取帮助。', link: '/article/2' },
+  { src: '/result1/images/article3.jpg', title: '小知识——生活中的帮助', text: '面向特殊群体的公共服务设施包括硬性设施和人性化服务，旨在保障其出行和生活便利，但实际执行仍存在差距，需要社会关注和改善。', link: '/article/3' },
+  { src: '/result1/images/article4.jpg', title: '小知识——遇到校园欺凌怎么办？', text: '校园欺凌普遍存在，影响学生身心健康。我们应通过冷静应对、求助他人、依法保护等措施应对校园暴力，共同营造和谐安全的校园环境。', link: '/article/4' },
   { src: 'https://via.placeholder.com/1000x200', title: 'title5', text: 'Image 5', link: '/article/5' },
   { src: 'https://via.placeholder.com/1000x200', title: 'title6', text: 'Image 6', link: '/article/6' },
   { src: 'https://via.placeholder.com/1000x200', title: 'title7', text: 'Image 7', link: '/article/7' },
