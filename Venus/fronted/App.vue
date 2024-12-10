@@ -72,8 +72,7 @@
   top: 50%;
   left: 35%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 26px;
+  font-size: 40px;
   font-weight: bold;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); /* 添加阴影提升文字可读性 */
 }

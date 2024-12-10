@@ -67,25 +67,25 @@
         </div>
         <div class="result-item">
           <router-link to="/result2">
-            <img src="../assets/result2.jpg" alt="成果图2" />
+            <img src="../assets/result2.png" alt="成果图2" />
             <div class="home_overlay">
-              <div class="home_overlay-text">成果 2</div>
+              <div class="home_overlay-text">普法课堂</div>
             </div>
           </router-link>
         </div>
         <div class="result-item">
           <router-link to="/result3">
-            <img src="../assets/result3.jpg" alt="成果图3" />
+            <img src="../assets/result3.png" alt="成果图3" />
             <div class="home_overlay">
-              <div class="home_overlay-text">成果 3</div>
+              <div class="home_overlay-text">普法讲座</div>
             </div>
           </router-link>
         </div>
         <div class="result-item">
           <router-link to="/result4">
-            <img src="../assets/result4.jpg" alt="成果图4" />
+            <img src="../assets/result4.png" alt="成果图4" />
             <div class="home_overlay">
-              <div class="home_overlay-text">成果 4</div>
+              <div class="home_overlay-text">视频展示</div>
             </div>
           </router-link>
         </div>
